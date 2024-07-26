@@ -3,6 +3,8 @@ import React from "react";
 import { useState } from "react";
 import { auth } from "./firebase";
 import { toast } from "react-toastify";
+import GooglesignIn from "./GooglesignIn";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -56,6 +58,7 @@ const Login = () => {
         <p>
           New user <a href="/signup">Register Here</a>
         </p>
+        <GooglesignIn />
       </form>
     </div>
   );
